@@ -1,13 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import 'fomantic-ui-css/semantic.min.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { createBrowserHistory } from 'history';
+
+export const history = createBrowserHistory();
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <App />,
   document.getElementById('root')
 );
 
